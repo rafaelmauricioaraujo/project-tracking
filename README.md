@@ -184,3 +184,10 @@ All errors follow this structure:
 - **Pagination limit capped at 100.** The backend enforces a max of 100 items per page. Dashboard stats use the `pagination.total` field from the API response rather than fetching all records, which is efficient but requires multiple requests for per-status counts.
 - **No caching layer.** Every page navigation re-fetches data from the API. This ensures freshness but increases server load. A caching strategy (SWR, React Query) could improve performance.
 - **Tailwind CSS utility classes.** Styling is done with utility classes directly in JSX. This avoids maintaining separate CSS files but can make component markup verbose.
+
+
+## AI Usage Policy
+
+Tools used: Claude Code
+
+Used on: Frontend, Backend, Debugging.
