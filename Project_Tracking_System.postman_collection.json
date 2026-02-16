@@ -1,0 +1,475 @@
+{
+  "info": {
+    "_postman_id": "5f10ec9b-c908-4373-9b5a-f431e2e8c7bc",
+    "name": "Project Tracking System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "7588021"
+  },
+  "item": [
+    {
+      "name": "List Projects",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/projects",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "projects"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Projects",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/projects",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "projects"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:3000"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "843"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"34b-OzD0Pf++FDctIy7XwryTW8rfQEA\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 16 Feb 2026 01:26:39 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"name\": \"health-sys\",\n            \"clientName\": \"Brazil Health Care\",\n            \"status\": \"COMPLETED\",\n            \"startDate\": \"2024-12-01T00:00:00.000Z\",\n            \"endDate\": \"2025-12-01T00:00:00.000Z\",\n            \"createdAt\": \"2026-02-16T01:11:42.977Z\",\n            \"updatedAt\": \"2026-02-16T01:11:42.977Z\",\n            \"id\": \"69926ece982b6e39775da437\"\n        },\n        {\n            \"name\": \"Mobile-Project\",\n            \"clientName\": \"Araujo Conect\",\n            \"status\": \"ON_HOLD\",\n            \"startDate\": \"2026-01-01T00:00:00.000Z\",\n            \"endDate\": \"2027-01-01T00:00:00.000Z\",\n            \"createdAt\": \"2026-02-16T01:10:27.265Z\",\n            \"updatedAt\": \"2026-02-16T01:10:27.265Z\",\n            \"id\": \"69926e83982b6e39775da42b\"\n        },\n        {\n            \"name\": \"Project-Test\",\n            \"clientName\": \"Araujo\",\n            \"status\": \"ACTIVE\",\n            \"startDate\": \"2026-02-15T00:00:00.000Z\",\n            \"endDate\": \"2027-02-15T00:00:00.000Z\",\n            \"createdAt\": \"2026-02-16T00:16:39.793Z\",\n            \"updatedAt\": \"2026-02-16T00:16:39.793Z\",\n            \"id\": \"699261e764bb889b528b5b02\"\n        }\n    ],\n    \"pagination\": {\n        \"page\": 1,\n        \"limit\": 10,\n        \"total\": 3,\n        \"totalPages\": 1\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Project",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/projects/69926ece982b6e39775da437",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "projects",
+            "69926ece982b6e39775da437"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Project",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/projects/69926ece982b6e39775da437",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "projects",
+                "69926ece982b6e39775da437"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:3000"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "262"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"106-S9kBe/O1L695Kvcuygd9mxJn0v8\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 16 Feb 2026 01:28:17 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"name\": \"health-sys\",\n    \"clientName\": \"Brazil Health Care\",\n    \"status\": \"COMPLETED\",\n    \"startDate\": \"2024-12-01T00:00:00.000Z\",\n    \"endDate\": \"2025-12-01T00:00:00.000Z\",\n    \"createdAt\": \"2026-02-16T01:11:42.977Z\",\n    \"updatedAt\": \"2026-02-16T01:11:42.977Z\",\n    \"id\": \"69926ece982b6e39775da437\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "New Project",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Cloud-Project\",\r\n  \"clientName\": \"Rafa Cloud\",\r\n  \"status\": \"ON_HOLD\",\r\n  \"startDate\": \"2026-01-01\",\r\n  \"endDate\": \"2028-01-01\",\r\n  \"createdAt\": \"2026-01-01\",\r\n  \"updatedAt\": \"2026-01-01\"\r\n}  ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/projects",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "projects"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Project",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Cloud-Project\",\r\n  \"clientName\": \"Rafa Cloud\",\r\n  \"status\": \"ON_HOLD\",\r\n  \"startDate\": \"2026-01-01\",\r\n  \"endDate\": \"2028-01-01\",\r\n  \"createdAt\": \"2026-01-01\",\r\n  \"updatedAt\": \"2026-01-01\"\r\n}  ",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/projects",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "projects"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:3000"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "255"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"ff-go8RqEiafuEHJuycJUSwLUXtrb0\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 16 Feb 2026 01:30:28 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"name\": \"Cloud-Project\",\n    \"clientName\": \"Rafa Cloud\",\n    \"status\": \"ON_HOLD\",\n    \"startDate\": \"2026-01-01T00:00:00.000Z\",\n    \"endDate\": \"2028-01-01T00:00:00.000Z\",\n    \"createdAt\": \"2026-02-16T01:30:28.871Z\",\n    \"updatedAt\": \"2026-02-16T01:30:28.871Z\",\n    \"id\": \"69927334982b6e39775da443\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update Project",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"status\": \"ACTIVE\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/projects/69927334982b6e39775da443",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "projects",
+            "69927334982b6e39775da443"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Update Project",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"ACTIVE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/projects/69927334982b6e39775da443",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "projects",
+                "69927334982b6e39775da443"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:3000"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "254"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"fe-SG1M/dsfi8TcIZDDd+0HYgZF5CE\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 16 Feb 2026 01:32:45 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"name\": \"Cloud-Project\",\n    \"clientName\": \"Rafa Cloud\",\n    \"status\": \"ACTIVE\",\n    \"startDate\": \"2026-01-01T00:00:00.000Z\",\n    \"endDate\": \"2028-01-01T00:00:00.000Z\",\n    \"createdAt\": \"2026-02-16T01:30:28.871Z\",\n    \"updatedAt\": \"2026-02-16T01:32:45.320Z\",\n    \"id\": \"69927334982b6e39775da443\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Project",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/projects/699273d2982b6e39775da447",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "projects",
+            "699273d2982b6e39775da447"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Delete Project",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/projects/699273d2982b6e39775da447",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "projects",
+                "699273d2982b6e39775da447"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:3000"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 16 Feb 2026 01:34:14 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "URL",
+      "value": ""
+    }
+  ]
+}
